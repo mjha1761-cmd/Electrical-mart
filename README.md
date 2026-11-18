@@ -1,18 +1,26 @@
 # Electrical Mart
 
-Electrical Mart is a planned marketplace app connecting electrical product sellers, customers, and wiremen, with administrative tools for managing the platform.
+Electrical Mart is an Android marketplace starter for electrical-product sellers, customers, wiremen/electricians, and administrators.
 
-## Planned features
+## Included in this starter
 
-- **Customers:** browse electrical products, search and filter the catalog, manage a cart, place orders, and view order status.
-- **Sellers:** manage products, prices, and stock; receive and update orders.
-- **Wiremen:** create a professional profile, list services, and receive customer enquiries or service requests.
-- **Admins:** manage users, product listings, orders, service requests, and platform settings.
+- Native Android app written in Java; no third-party runtime libraries.
+- Product catalog with sample products and add-to-cart flow.
+- Demo checkout confirmation.
+- Seller dashboard with an in-memory add-product form.
+- Wireman service profile and demo customer enquiry.
+- Admin overview and role switcher for exploring each dashboard.
+- Offline demo data: app data resets when the app process is recreated.
 
-## Project status
+## Open and build
 
-This repository is currently an initial project placeholder. The app technology, backend, authentication, and payment integrations still need to be selected and implemented.
+1. Open this repository in Android Studio (Giraffe or newer) and allow Gradle sync.
+2. Install Android SDK Platform 35 if prompted.
+3. Select the `app` run configuration and launch on an emulator or Android device.
+4. To create a debug APK, use **Build → Build Bundle(s) / APK(s) → Build APK(s)**. Android Studio places it under `app/build/outputs/apk/debug/`.
 
-## Getting started
+Alternatively, from a machine with Gradle and Android SDK configured, run `gradle assembleDebug` from the repository root.
 
-Setup and build instructions will be added after the application framework and project structure are established.
+## Important limitations
+
+This is a clickable UI prototype, not a production marketplace. Authentication, cloud database, seller verification, real order processing, payments, delivery, notifications, service-provider matching, and secure admin permissions are not connected. The role picker is for demo/testing only; it is not access control. Connect a backend and implement authorization before handling real users or payments.
